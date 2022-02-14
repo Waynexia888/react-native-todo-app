@@ -1,2 +1,2 @@
 # react-native-todo-app
-![UI Design](assets/UI Design.png)<br/><br/><br/>
+![Design](styles/images/Design.png)<br/><br/><br/>
