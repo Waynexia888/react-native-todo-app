@@ -1,2 +1,2 @@
 # react-native-todo-app
-![Design](styles/images/Design.png)<br/><br/><br/>
+- <img src="styles/images/Design.png" width="428" height="926">
