@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, ScrollView, FlatList } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import Task from './Task';
 
 const TodoList = ({ data, removeTodo, editTodo, toggleTodo }) => {

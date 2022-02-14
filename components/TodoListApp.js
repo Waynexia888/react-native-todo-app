@@ -1,15 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Platform,
   StyleSheet,
   Text,
   View,
-  KeyboardAvoidingView,
-  TextInput,
-  TouchableOpacity,
-  Keyboard,
-  ScrollView,
-  FlatList
 } from 'react-native';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
@@ -67,21 +60,18 @@ const TodoListApp = () => {
         <View style={styles.container}>
             <View style={styles.tasksWrapper}>
                 <Text style={styles.sectionTitle}>Today's Tasks</Text>
-             
                     <TodoList 
                     data={data}
                     removeTodo={removeTodo}
                     editTodo={editTodo}
-                    toggleTodo={toggleTodo}/>
-            
-                
+                    toggleTodo={toggleTodo}
+                />
             </View>
             <TodoForm 
                 addTodo={addTodo}
                 data={data}
             />
         </View>
-        
     )
 }
 

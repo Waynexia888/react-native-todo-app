@@ -10,9 +10,9 @@ const EditTodoForm = ({ id, todo, editTodo, toggleEditForm }) => {
         toggleEditForm();
     }
     return (
-        <View style={styles.item}
-            // behavior={Platform.OS === "ios" ? "padding" : 'height'}
-            // style={styles.writeTaskWrapper}
+        <KeyboardAvoidingView  style={styles.item}
+            behavior={Platform.OS === "ios" ? "padding" : 'height'}
+            style={styles.writeTaskWrapper}
         >
             <View style={styles.itemLeft}>
                 <TextInput 
@@ -29,7 +29,7 @@ const EditTodoForm = ({ id, todo, editTodo, toggleEditForm }) => {
                 </TouchableOpacity>
             </View>
         
-        </View>
+        </KeyboardAvoidingView>
     )
 }
 
@@ -44,7 +44,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         flexWrap: 'wrap',
-        // maxWidth: '90%',
     },
     input: {},
     itemRight: {
@@ -53,8 +52,6 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
     },
     completedIcon: {
-    
-
     }
 })
 
